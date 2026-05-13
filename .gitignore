@@ -10,6 +10,8 @@
 
 # Misc
 .DS_Store
+.vscode/
+.claude/
 .env.local
 .env.development.local
 .env.test.local

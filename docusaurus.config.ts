@@ -14,7 +14,7 @@ const config: Config = {
 
   onBrokenLinks: 'warn',
   markdown: {
-    format: 'mdx',
+    format: 'detect',
   },
 
   i18n: { defaultLocale: 'en', locales: ['en'] },

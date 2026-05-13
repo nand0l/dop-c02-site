@@ -47,12 +47,12 @@ Monitoring and Security are over-represented in this corpus relative to official
 
 ## Domain files in this synthesis
 
-1. `01-sdlc-automation.md` -- CodePipeline, CodeBuild, CodeDeploy, CodeCommit, CodeArtifact, ECR, deployment strategies, blue/green, canary
-2. `02-configuration-management-iac.md` -- CloudFormation, StackSets, CDK, SAM, Systems Manager, Service Catalog, Image Builder
-3. `03-resilient-cloud-solutions.md` -- Auto Scaling, ALB/NLB, Route 53, multi-Region DR, RPO/RTO, Aurora Global, S3 CRR, Global Accelerator
-4. `04-monitoring-and-logging.md` -- CloudWatch (metrics, logs, alarms, insights, dashboards, RUM, Synthetics), X-Ray, CloudTrail, EventBridge, Kinesis/Firehose
-5. `05-incident-event-response.md` -- EventBridge automation, SSM Automation runbooks, Config remediation, SNS/SQS/DLQ patterns
-6. `06-security-compliance.md` -- IAM, Organizations, SCPs, Control Tower, Config, GuardDuty, Inspector, Macie, Security Hub, Secrets Manager, KMS
+1. [SDLC Automation](./sdlc-automation) -- CodePipeline, CodeBuild, CodeDeploy, CodeCommit, CodeArtifact, ECR, deployment strategies, blue/green, canary
+2. [Configuration Management and IaC](./configuration-management-iac) -- CloudFormation, StackSets, CDK, SAM, Systems Manager, Service Catalog, Image Builder
+3. [Resilient Cloud Solutions](./resilient-cloud-solutions) -- Auto Scaling, ALB/NLB, Route 53, multi-Region DR, RPO/RTO, Aurora Global, S3 CRR, Global Accelerator
+4. [Monitoring and Logging](./monitoring-and-logging) -- CloudWatch (metrics, logs, alarms, insights, dashboards, RUM, Synthetics), X-Ray, CloudTrail, EventBridge, Kinesis/Firehose
+5. [Incident and Event Response](./incident-event-response) -- EventBridge automation, SSM Automation runbooks, Config remediation, SNS/SQS/DLQ patterns
+6. [Security and Compliance](./security-compliance) -- IAM, Organizations, SCPs, Control Tower, Config, GuardDuty, Inspector, Macie, Security Hub, Secrets Manager, KMS
 
 ---
 
@@ -92,10 +92,10 @@ EventBridge, Lambda, SNS, and SQS appear across nearly every domain. The exam te
 
 ## Reading order recommendation
 
-1. Start with `06-security-compliance.md` and `01-sdlc-automation.md` -- highest weight, most questions.
-2. Then `04-monitoring-and-logging.md` and `03-resilient-cloud-solutions.md` -- heavy overlap; CloudWatch alarms drive Auto Scaling, etc.
-3. Then `02-configuration-management-iac.md` -- CloudFormation patterns appear inside SDLC, Security, and Resilience answers.
-4. Finish with `05-incident-event-response.md` -- shortest, but the patterns there reinforce the rest.
+1. Start with [Security and Compliance](./security-compliance) and [SDLC Automation](./sdlc-automation) -- highest weight, most questions.
+2. Then [Monitoring and Logging](./monitoring-and-logging) and [Resilient Cloud Solutions](./resilient-cloud-solutions) -- heavy overlap; CloudWatch alarms drive Auto Scaling, etc.
+3. Then [Configuration Management and IaC](./configuration-management-iac) -- CloudFormation patterns appear inside SDLC, Security, and Resilience answers.
+4. Finish with [Incident and Event Response](./incident-event-response) -- shortest, but the patterns there reinforce the rest.
 
 ---
 

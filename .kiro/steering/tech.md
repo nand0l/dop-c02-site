@@ -30,33 +30,33 @@ Node.js >= 20.0
 
 ## Package Manager
 
-**Yarn** (see README — all commands use `yarn`, not `npm`)
+**npm** (use `npm`, not `yarn`)
 
 ## Common Commands
 
 ```bash
 # Install dependencies
-yarn
+npm install
 
 # Start local dev server (hot reload)
-yarn start
+npm start
 
 # Production build → ./build/
-yarn build
+npm run build
 
 # Serve the production build locally
-yarn serve
+npm run serve
 
 # Type-check TypeScript
-yarn typecheck
+npm run typecheck
 
 # Clear Docusaurus cache
-yarn clear
+npm run clear
 
 # Deploy to GitHub Pages
-GIT_USER=<username> yarn deploy
+GIT_USER=<username> npm run deploy
 # or with SSH:
-USE_SSH=true yarn deploy
+USE_SSH=true npm run deploy
 ```
 
 ## Styling
