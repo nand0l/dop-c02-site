@@ -11,7 +11,7 @@ If authentication is added in future, document it using the sections below.
 ## Cognito User Pool
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | User pool ID | <!-- TODO --> |
 | User pool name | <!-- TODO --> |
 | Region | <!-- TODO --> |
@@ -19,7 +19,7 @@ If authentication is added in future, document it using the sections below.
 ## Identity Pool
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Identity pool ID | <!-- TODO --> |
 | Unauthenticated access | <!-- TODO: enabled/disabled --> |
 
@@ -36,7 +36,7 @@ If authentication is added in future, document it using the sections below.
 ## Password Policy
 
 | Setting | Value |
-|---|---|
+| --- | --- |
 | Minimum length | <!-- TODO --> |
 | Require uppercase | <!-- TODO --> |
 | Require numbers | <!-- TODO --> |
@@ -46,20 +46,20 @@ If authentication is added in future, document it using the sections below.
 ## MFA Settings
 
 | Setting | Value |
-|---|---|
+| --- | --- |
 | MFA enforcement | <!-- TODO: optional/required/off --> |
 | MFA methods | <!-- TODO: TOTP / SMS --> |
 
 ## User Groups and Roles
 
 | Group | IAM role | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> |
 
 ## Token Usage
 
 | Token | Expiry | Usage |
-|---|---|---|
+| --- | --- | --- |
 | Access token | <!-- TODO --> | API authorization |
 | ID token | <!-- TODO --> | User identity claims |
 | Refresh token | <!-- TODO --> | Obtain new tokens |
@@ -67,7 +67,7 @@ If authentication is added in future, document it using the sections below.
 ## Callback and Logout URLs
 
 | Environment | Callback URL | Logout URL |
-|---|---|---|
+| --- | --- | --- |
 | prod | <!-- TODO --> | <!-- TODO --> |
 
 ## Authorization Model

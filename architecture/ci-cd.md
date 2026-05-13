@@ -6,12 +6,12 @@ AWS Amplify Hosting provides the CI/CD pipeline. Every push to a connected branc
 
 ## Git Provider
 
-GitHub — https://github.com/nand0l/dop-c02-site
+GitHub — <https://github.com/nand0l/dop-c02-site>
 
 ## Branch-to-Environment Mapping
 
 | Branch | Environment | Auto-deploy |
-|---|---|---|
+| --- | --- | --- |
 | main | prod | yes |
 
 ## Build Configuration
@@ -19,7 +19,7 @@ GitHub — https://github.com/nand0l/dop-c02-site
 Defined in `amplify.yml` at the repository root.
 
 | Phase | Command |
-|---|---|
+| --- | --- |
 | preBuild | `npm ci --cache .npm` |
 | build | `npm run build` |
 | artifact directory | `build/` |
@@ -30,7 +30,7 @@ Defined in `amplify.yml` at the repository root.
 ### Required Tools
 
 | Tool | Minimum version |
-|---|---|
+| --- | --- |
 | Node.js | 20.0 |
 | npm | bundled with Node |
 | Git | any recent |
@@ -60,6 +60,7 @@ No `.env` files required — the site is fully static with no runtime secrets.
 ### Local Testing
 
 There is no automated test suite. Verify changes by:
+
 1. Running `npm run typecheck` — catches TypeScript errors
 2. Running `npm run build` — catches broken links (warnings) and build errors
 3. Running `npm start` and reviewing in a browser
@@ -96,5 +97,5 @@ Alternatively, revert the commit in Git and push — Amplify will build and depl
 ## Pipeline Owner
 
 | Name | GitHub |
-|---|---|
+| --- | --- |
 | nand0l | @nand0l |

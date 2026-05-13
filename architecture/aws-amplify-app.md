@@ -3,12 +3,12 @@
 ## Application Overview
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | App name | dop-c02-site |
 | Business purpose | AWS DOP-C02 DevOps Engineer Professional exam study guide — 360 practice questions and domain synthesis content |
 | Target users | Individuals preparing for the AWS DOP-C02 certification exam |
 | Environments | prod (main branch) |
-| Repository URL | https://github.com/nand0l/dop-c02-site |
+| Repository URL | <https://github.com/nand0l/dop-c02-site> |
 | Frontend framework | Docusaurus 3 (React) |
 | Amplify generation | Gen 1 |
 
@@ -16,7 +16,7 @@
 
 ### High-Level Architecture
 
-```
+```text
 GitHub (main branch)
         │
         ▼
@@ -39,13 +39,16 @@ None — fully static site. No API, no database, no Lambda functions.
 
 ### AWS Region
 
+| regionID | Region name |
+| --- | --- |
+| eu-central-1 | Frankfurt |
 <!-- TODO: confirm region (e.g. eu-west-1) -->
 
 ### Account IDs
 
-| Environment | Account ID |
-|---|---|
-| prod | <!-- TODO --> |
+| Environment | Account ID | Account name |
+| --- | --- | --- |
+| prod | 730335671157 | gksandbox.eu |
 
 ### Domain / Subdomain Structure
 
@@ -66,7 +69,7 @@ Browser → Amplify CDN → static HTML/JS/CSS. No backend calls.
 ### Connected Branches
 
 | Branch | Environment | Auto-deploy |
-|---|---|---|
+| --- | --- | --- |
 | main | prod | yes |
 
 ### Build Settings
@@ -95,7 +98,7 @@ frontend:
 ### Environment Variables
 
 | Variable | Purpose | Secret |
-|---|---|---|
+| --- | --- | --- |
 | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> |
 
 ### Secrets Handling
@@ -141,14 +144,14 @@ See [networking.md](networking.md) for CORS, WAF, and domain configuration.
 ### IAM Roles
 
 | Role | Purpose |
-|---|---|
+| --- | --- |
 | Amplify service role | Build and deploy access |
 
 ### Public Access
 
 The site is fully public — no authentication required to view content.
 
-### Secrets Handling
+### Secrets in Version Control
 
 SSM Parameter Store used for any build-time secrets. No secrets committed to the repository.
 
@@ -215,7 +218,7 @@ In the Amplify console: **Build settings → Clear cache**, then trigger a new b
 ### Main Cost Drivers
 
 | Service | Cost driver |
-|---|---|
+| --- | --- |
 | Amplify Hosting | Build minutes + data transfer |
 | Route 53 | Hosted zone + queries (if custom domain) |
 
@@ -244,7 +247,7 @@ npm start        # dev server at http://localhost:3000
 ### Maintainers
 
 | Name | Role | GitHub |
-|---|---|---|
+| --- | --- | --- |
 | nand0l | Owner | @nand0l |
 
 ### AWS Account Access
@@ -253,7 +256,7 @@ npm start        # dev server at http://localhost:3000
 
 ### GitHub Access
 
-Repository: https://github.com/nand0l/dop-c02-site
+Repository: <https://github.com/nand0l/dop-c02-site>
 
 ### Domain / DNS Ownership
 

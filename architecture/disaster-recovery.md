@@ -7,14 +7,14 @@ This is a static site hosted on AWS Amplify. All source of truth is in Git — t
 ## RTO / RPO
 
 | Metric | Target | Notes |
-|---|---|---|
+| --- | --- | --- |
 | RTO (Recovery Time Objective) | < 30 minutes | Time to redeploy from Git to a new Amplify app |
 | RPO (Recovery Point Objective) | 0 | All content is in Git; no data is lost on failure |
 
 ## Backup Strategy
 
 | Asset | Backup mechanism |
-|---|---|
+| --- | --- |
 | Source code and content | Git history on GitHub |
 | Build artifacts | Reproducible from source at any time |
 | Amplify configuration | Documented in `architecture/aws-amplify-app.md` and `amplify.yml` |
@@ -63,7 +63,7 @@ Available in the Amplify console under each branch → build history. Retained b
 ### CloudWatch Log Groups
 
 | Log group | Content | Retention |
-|---|---|---|
+| --- | --- | --- |
 | <!-- TODO: `/aws/amplify/<app-id>` --> | Build logs | <!-- TODO --> |
 
 ### Lambda Logs
@@ -87,7 +87,7 @@ Not applicable — no authentication.
 <!-- TODO: consider adding Sentry or CloudWatch RUM for client-side error tracking -->
 
 | Tool | Status |
-|---|---|
+| --- | --- |
 | Sentry | not configured |
 | CloudWatch RUM | not configured |
 
@@ -96,7 +96,7 @@ Not applicable — no authentication.
 <!-- TODO: configure CloudWatch alarms for build failures or high error rates -->
 
 | Alarm | Metric | Threshold | Action |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> | <!-- TODO --> |
 
 ### Dashboards
