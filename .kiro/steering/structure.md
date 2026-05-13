@@ -1,6 +1,6 @@
 # Project Structure
 
-```
+```text
 dop-c02-site/
 ├── docs/
 │   ├── studyguides/             # Domain synthesis study guide content

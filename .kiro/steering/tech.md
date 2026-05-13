@@ -105,5 +105,6 @@ Configured via `headTags` in `docusaurus.config.ts`. All favicon assets live in 
 ## Markdownlint
 
 `.markdownlint.json` at the project root configures markdownlint for the `architecture/` docs:
+
 - MD013 (line length) disabled — impractical for tables
 - Table separators must use `| --- |` style (MD060)
