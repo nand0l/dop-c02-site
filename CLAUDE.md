@@ -15,10 +15,17 @@ npm run build      # Generate static site to /build
 npm run serve      # Serve the built site locally
 npm run typecheck  # TypeScript type checking
 npm run clear      # Clear Docusaurus cache (use when builds behave unexpectedly)
-npm run deploy     # Deploy to GitHub Pages (USE_SSH=true npm run deploy for SSH)
 ```
 
-Use `npm`, not `yarn`.
+Use `npm`, not `yarn`. Deployment is via AWS Amplify (push to `main`) — not `npm run deploy`.
+
+## Linting
+
+```powershell
+npx markdownlint-cli --config .markdownlint.json architecture/
+```
+
+`.markdownlint.json` disables MD013 (line length). All markdown files in `architecture/` must pass before committing.
 
 ## Architecture
 
@@ -52,13 +59,18 @@ The sidebar for `studyguides/` is manually ordered in `sidebars.ts` — add new 
 ### Configuration
 
 - `docusaurus.config.ts` — Main site config: title, navbar, theme (GitHub light / Dracula dark), blog disabled (`blog: false`), docs served at root (`routeBasePath: '/'`), `onBrokenLinks: 'warn'`, `future: { v4: true }`
+- `amplify.yml` — CI/CD build config for AWS Amplify; overrides console settings
 - `sidebars.ts` — Sidebar manually ordered under the `studyGuide` key
 - `tsconfig.json` — Strict TypeScript, Docusaurus preset base
 - All config files (`docusaurus.config.ts`, `sidebars.ts`) are TypeScript — keep them typed
 
 ### Source (`/src`)
 
-React/TSX components. `src/components/HomepageFeatures/` renders feature cards (largely unused since docs are at root). Content must not be placed in `src/pages/`.
+React/TSX components and future interactive features. Content must not be placed in `src/pages/`.
+
+### Architecture Documentation (`/architecture`)
+
+Non-Docusaurus Markdown files documenting the hosting infrastructure. Not served by the site — developer reference only. Five files: `aws-amplify-app.md` (master doc), `authentication.md`, `ci-cd.md`, `networking.md`, `disaster-recovery.md`. Use `| --- |` style for table separators (enforced by markdownlint).
 
 ### Planned Feature: Interactive Quiz Mode
 
